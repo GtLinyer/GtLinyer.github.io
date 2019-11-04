@@ -1,0 +1,24 @@
+.center {
+	text-align:center;
+}
+h1 {
+	color:#444A67;
+}
+#d1 {
+	background-color:#87CEFA;
+	width:500px;
+	height:100px;
+	text-align:center;
+	font-size:22px;
+	font-family:"幼圆";
+	color:#000000;
+}
+a {
+	background-color:#AC45AF;
+	text-decoration:none;
+	font-family:"Times New Roman",Times,Sans-serif;
+	color:#ffffff;
+}
+#footer {
+	color:#717D7E;
+}
