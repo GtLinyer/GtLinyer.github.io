@@ -6,6 +6,11 @@
     width: 720px;
     height: 480px;
 }
+@media screen and (max-width: 600px) {
+	.container {
+		width: 420px;
+	}
+}
 .topnav {
   overflow: hidden;
   background-color: grey;
