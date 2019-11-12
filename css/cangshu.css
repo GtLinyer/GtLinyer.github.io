@@ -4,7 +4,7 @@
 	flex-direction: column;
 	background-color: #EBF5FB;
     width: 720px;
-    height: 480px;
+    height: 940px;
 }
 .topnav {
 	overflow: hidden;
@@ -26,37 +26,11 @@
     background-color: #87CEFA;
     color: white;
 }
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
 .body {
-	float: left;
-	margin-top: 10px;
+	margin: auto;
 	background-color: #87CEFA;
-	width: 460px;
-	height: 180px;
-	text-align: center;
-	font-size: 22px;
-	font-family: "幼圆";
-	color: red;
-}
-.right {
-	float: right;
-	margin-top: 10px;
-	background-color: grey;
-	text-align: center;
-	color: white;
-	width: 250px;
-	height: 180px;
-}
-.right a {
-	text-decoration: none;
-	color: white;
-}
-.right a:hover {
-	color: #4EA6E4;
+	width: 405px;
+	height: 720px;
 }
 .footer {
 	color: #717D7E;
@@ -76,17 +50,10 @@ body {
 @media screen and (max-width: 720px) {
 	.container {
 		width: 420px;
-		height: 560px;
+		height: 1030px;
 	}
 	.topnav a {
 		float: none;
-	}
-	.body {
-		width: 420px;
-		height: 100px;
-	}
-	.right {
-		width: 420px;
-		height: 100px;
+		
 	}
 }
