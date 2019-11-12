@@ -64,6 +64,8 @@
 .imgbutton:hover {
     width: 42px;
     height: 42px;
+	
+filter: blur(2px);
     transform: rotate(360deg);
 }
 .footer {
