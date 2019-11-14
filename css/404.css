@@ -38,17 +38,6 @@ h1 {
     padding: 12px 30px;
 	background-color: #45B39D;
 }
-.footer {
-	color: #717D7E;
-}
-.footer a {
-	text-decoration: none;
-	color: #4EA6E4;
-}
-.footer a:hover {
-	color: white;
-	background-color: grey;
-}
 body {
 	background-image: url(); 
     background-position: center; 
