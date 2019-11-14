@@ -21,13 +21,22 @@ h1 {
 	font-family: "幼圆";
 	color: white;
 }
-a {
-	text-decoration: none;
-	font-size: 22px;
-	color: white;
+.button {
+    background-color: #2ECC71;
+	border: 2px solid #45B39D;
+	border-radius: 16px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+	font-family: "Times New Roman",Times,Sans-serif;
+    display: inline-block;
+    font-size: 16px;
+	transition: padding 0.5s;
 }
-a:hover {
-	color: #38CF26;
+.button:hover {
+    padding: 12px 30px;
+	background-color: #45B39D;
 }
 .footer {
 	color: #717D7E;
