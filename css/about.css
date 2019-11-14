@@ -3,8 +3,8 @@
     display: flex;
 	flex-direction: column;
 	background-color: #EBF5FB;
-    width: 720px;
-    height: 480px;
+    width: 1200px;
+    height: 380px;
 }
 .topnav {
 	overflow: hidden;
@@ -33,6 +33,7 @@
 }
 .body {
 	float: left;
+	margin-left: 200px;
 	margin-top: 10px;
 	background-color: #87CEFA;
 	width: 460px;
@@ -44,6 +45,7 @@
 }
 .right {
 	float: right;
+	margin-right: 200px;
 	margin-top: 10px;
 	background-color: grey;
 	text-align: center;
@@ -73,19 +75,21 @@ body {
 	background-image: url(); 
     background-position: center; 
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
 	.container {
 		width: 420px;
-		height: 560px;
+		height: 540px;
 	}
 	.topnav a {
 		float: none;
 	}
 	.body {
+		margin-left: 0px;
 		width: 420px;
 		height: 100px;
 	}
 	.right {
+		margin-right: 0px;
 		width: 420px;
 		height: 100px;
 	}
