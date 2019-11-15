@@ -4,7 +4,7 @@
 	flex-direction: column;
 	background-color: #EBF5FB;
     width: 1200px;
-    height: 480px;
+    height: 500px;
 	transition: height 2s;
 }
 .topnav {
@@ -34,7 +34,7 @@
 	border-radius: 10px;
 	padding: 10px;
 	width: 380px;
-	height: 220px;
+	height: 280px;
 	font-size: 22px;
 	font-family: "幼圆";
 	color: #000000;
@@ -73,7 +73,7 @@ body {
     background-position: center; 
 }
 #tr1 {
-	height: 55px;
+	height: 58px;
 }
 #td1 {
 	width: 144px;
@@ -91,7 +91,7 @@ body {
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 420px;
-		height: 580px;
+		height: 640px;
 	}
 	.topnav a {
 		float: none;
