@@ -1,8 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset>
-    <url>
-        <loc>https://www.linyer.cn/</loc>
-        <lastmod>2019-11-20</lastmod>
-         <priority>1</priority>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>http://www.linyer.cn</loc>
+    <lastmod>2019-11-20</lastmod>
+  </url>
 </urlset>
