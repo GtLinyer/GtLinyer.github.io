@@ -4,7 +4,8 @@
 	flex-direction: column;
 	background-color: #EBF5FB;
     width: 1200px;
-    height: 500px;
+    height: 1000px;
+	transition: height 2s;
 }
 .topnav {
 	overflow: hidden;
@@ -29,28 +30,25 @@
 .body {
 	margin: auto;
 	background-color: #87CEFA;
-	border-radius: 50px;
-	width: 420px;
-	height: 300px;
 }
-.body p {
-	color: #E5E8E8;
-	font-size: 24px;
-	text-align: center;
-}
-body {
-	background-image: url(); 
-    background-position: center; 
+.mb {
+    width: 1200px;
+    height: 800px;
 }
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 420px;
-		height: 700px;
-	}
-	.body {
-		border-radius: 0px;
+		height: 1200px;
 	}
 	.topnav a {
 		float: none;
 	}
+	.body {
+		border-radius: 0px;
+		width: 400px;
+    }
+    .mb {
+        width: 420px;
+        height: 800px;
+    }
 }

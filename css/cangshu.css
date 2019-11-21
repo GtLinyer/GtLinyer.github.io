@@ -39,7 +39,7 @@ body {
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 420px;
-		height: 1050px;
+		height: 1120px;
 	}
 	.topnav a {
 		float: none;
