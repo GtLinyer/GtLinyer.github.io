@@ -9,8 +9,49 @@
 	width: 1200px;
 }
 .topnav {
+	z-index: 1; 
 	overflow: hidden;
 	background-color: #474747;
+}
+.click {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.nd-animation {
+	display: block;
+	position: relative;
+	padding: inherit;
+	width: 28px;
+	height: 4px;
+	background-color: #25283D;
+	transition: background-color .2s linear;
+}
+.nd-animation::before {
+	position: absolute;
+	content: '';
+	width: 28px;
+	height: 4px;
+	background: #25283D;
+	transform: translateY(-8px);
+	transition: transform .2s linear;
+}
+.nd-animation::after {
+	position: absolute;
+	content: '';
+	width: 28px;
+	height: 4px;
+	background: #25283D;
+	transform: translateY(8px);
+	transition: transform .2s linear;
+}
+.is-open {
+	background-color: rgba(255, 255, 255, 0);
+}
+.is-open::before {
+	transform: rotate(-45deg);
+}
+.is-open::after {
+	transform: rotate(45deg);
 }
 .topnav a {
 	float: left;
@@ -23,7 +64,7 @@
 	text-decoration: none;
 }
 .topnav a.active {
-    background-color: #87CEFA;
+    background-color: #48C9B0;
     color: white;
 }
 .topnav a:hover:not(.active) {
@@ -48,14 +89,16 @@
 }
 .lianjie {
 	margin: auto;
-	width: 60%;
+	width: 335px;
 }
 .body ul {
 	list-style-type: none;
-	padding: 32px;
+	height: 32px;
+	
 }
 .body li {
 	float: left;
+	
 }
 .button {
 	background-color: #2ECC71;
@@ -139,7 +182,28 @@
 		height: 100px;
 	}
 }
+@media screen and (min-width: 500px) {
+	.nd-animation {
+		display: none;
+	}
+}
 @media screen and (max-width: 500px) {
+	.topnav {
+		transform: translateX(-120%);
+		position: absolute;
+		width: 40%;
+		transition: transform 1s;
+	}
+	.shownav {
+		transform: translateX(0);
+		width: 40%;
+		display: block;
+		position: absolute;
+		transition: transform 0.5s;
+	}
+	.nd-animation {
+		display: block;
+	}
 	.topnav a {
 		width: 100%;
 		float: none;
