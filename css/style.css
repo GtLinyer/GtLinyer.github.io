@@ -192,6 +192,9 @@
 	}
 }
 @media screen and (max-width: 500px) {
+	#date {
+		width: 265px;
+	}
 	.topnav {
 		transform: translateX(-120%);
 		position: absolute;
