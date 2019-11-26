@@ -56,4 +56,4 @@ function date() {
 	var nowdate = "当前时间为："+yy+"年"+MM+"月"+dd+"日 "+wk[ww]+" "+hh+"时"+mm+"分"+ss+"秒";
 	return nowdate;
 }
-setInterval("document.getElementById('date').innerHTML = date();",500);
+setInterval("document.getElementById('date').innerHTML = date();",100);
