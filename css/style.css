@@ -9,53 +9,17 @@
 	width: 1200px;
 }
 #date {
-	color:darkgreen;
+	color: darkgreen;
 	float: right;
 }
 .topnav {
-	z-index: 1; 
+	z-index: 2; 
 	overflow: hidden;
 	background-color: #474747;
 }
 .click {
-	margin-top: 8px;
-	margin-bottom: 8px;
-}
-.nd-animation {
-	display: block;
-	position: relative;
-	padding: inherit;
-	width: 28px;
-	height: 4px;
-	background-color: #25283D;
-	transition: background-color .2s linear;
-}
-.nd-animation::before {
-	position: absolute;
-	content: '';
-	width: 28px;
-	height: 4px;
-	background: #25283D;
-	transform: translateY(-8px);
-	transition: transform .2s linear;
-}
-.nd-animation::after {
-	position: absolute;
-	content: '';
-	width: 28px;
-	height: 4px;
-	background: #25283D;
-	transform: translateY(8px);
-	transition: transform .2s linear;
-}
-.is-open {
-	background-color: rgba(255, 255, 255, 0);
-}
-.is-open::before {
-	transform: rotate(-45deg);
-}
-.is-open::after {
-	transform: rotate(45deg);
+	z-index: 3; 
+	display: none;
 }
 .topnav a {
 	float: left;
@@ -97,12 +61,10 @@
 }
 .body ul {
 	list-style-type: none;
-	height: 32px;
-	
+	height: 32px;	
 }
 .body li {
 	float: left;
-	
 }
 .button {
 	background-color: #2ECC71;
@@ -176,12 +138,12 @@
 		width: 100%;
 	}
 	.left {
-		margin-left: 0px;
+		margin-left: 0;
 		width: 100%;
 		height: 100px;
 	}
 	.right {
-		margin-right: 0px;
+		margin-right: 0;
 		width: 100%;
 		height: 100px;
 	}
@@ -195,6 +157,13 @@
 	#date {
 		width: 265px;
 	}
+	.click {
+		display: inline;
+	}
+	.cdl {
+		color: chocolate;
+		text-align: center;
+	}
 	.topnav {
 		transform: translateX(-120%);
 		position: absolute;
@@ -205,11 +174,7 @@
 		transform: translateX(0);
 		width: 40%;
 		display: block;
-		position: absolute;
 		transition: transform 0.5s;
-	}
-	.nd-animation {
-		display: block;
 	}
 	.topnav a {
 		width: 100%;

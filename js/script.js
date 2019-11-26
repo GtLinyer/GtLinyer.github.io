@@ -1,17 +1,38 @@
-function topnavChange()
-{
-	var node = document.getElementsByClassName('nd-animation')[0];
-	if (node.classList.contains('is-open')) {
-		node.classList.remove('is-open');
-	} else {
-		node.classList.add('is-open');
+function gifcha() {
+	var c = document.getElementById('c');
+	var tn = document.getElementById('tpn');
+	if (c.classList.contains('showgif')) {
+		c.classList.add('closegif');
+		c.classList.remove('showgif');
+		c.setAttribute("src","image/c1.gif");
+	} else if (c.classList.contains('closegif')){
+		c.classList.add('showgif');
+		c.classList.remove('closegif');
+		c.setAttribute("src","image/c0.gif");
 	}
-	var node1 = document.getElementsByClassName('topnav')[0];
-	if (node1.classList.contains('shownav')) {
-		node1.classList.remove('shownav');
+	if (tn.classList.contains('shownav')) {
+		tn.classList.remove('shownav');
 	} else {
-		node1.classList.add('shownav');
-	}	
+		tn.classList.add('shownav');
+	}
+}
+function gifcha1() {
+	var c = document.getElementById('c');
+	var tn = document.getElementById('tpn');
+	if (c.classList.contains('showgif')) {
+		c.classList.add('closegif');
+		c.classList.remove('showgif');
+		c.setAttribute("src","../image/c1.gif");
+	} else if (c.classList.contains('closegif')){
+		c.classList.add('showgif');
+		c.classList.remove('closegif');
+		c.setAttribute("src","../image/c0.gif");
+	}
+	if (tn.classList.contains('shownav')) {
+		tn.classList.remove('shownav');
+	} else {
+		tn.classList.add('shownav');
+	}
 }
 function date() {
 	var d = new Date();
