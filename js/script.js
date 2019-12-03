@@ -36,10 +36,11 @@ function gifcha1() {
 }
 function date() {
 	var d = new Date();
-	var wk = new Array('星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日');
+	var wk = new Array('星期日','星期一', '星期二', '星期三', '星期四', '星期五', '星期六');
 	var yy = d.getFullYear();
 	var MM = d.getMonth()+1;
-	var ww = d.getDay()-1;
+	var ww = d.getDay();
+	
 	var dd = d.getDate();
 	var hhh = d.getHours();
 	var mmm = d.getMinutes();
