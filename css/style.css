@@ -9,6 +9,7 @@
 	width: 1200px;
 }
 #date {
+	font-family: "华文琥珀";
 	color: darkgreen;
 	float: right;
 }
@@ -26,6 +27,7 @@
 	display: block;
 	color: white;
 	text-align: center;
+	font-family: "华文彩云";
 	border: 1px solid grey;
 	padding: 16px;
 	width: 48px;
@@ -184,4 +186,24 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+}
+@font-face{
+    font-family: '华文行楷';
+    src : url('../fonts/hwxk.TTF');
+}
+@font-face{
+    font-family: '华文彩云';
+    src : url('../fonts/hwcy.TTF');
+}
+@font-face{
+    font-family: '华文楷体';
+    src : url('../fonts/hwkt.TTF');
+}
+@font-face{
+    font-family: '幼圆';
+    src : url('../fonts/yy.TTF');
+}
+@font-face{
+    font-family: '华文琥珀';
+    src : url('../fonts/hwhp.TTF');
 }
