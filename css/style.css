@@ -112,7 +112,7 @@
 	margin-top: 10px;
 	background-color: #87CEFA;
 	width: 460px;
-	height: 180px;
+	height: 130px;
 	text-align: center;
 	font-size: 22px;
 	font-family: "幼圆";
@@ -126,7 +126,7 @@
 	text-align: center;
 	color: white;
 	width: 250px;
-	height: 180px;
+	height: 130px;
 }
 .right a {
 	text-decoration: none;
@@ -142,12 +142,10 @@
 	.left {
 		margin-left: 0;
 		width: 100%;
-		height: 100px;
 	}
 	.right {
 		margin-right: 0;
 		width: 100%;
-		height: 100px;
 	}
 }
 @media screen and (min-width: 500px) {
@@ -179,12 +177,18 @@
 		transition: transform 0.5s;
 	}
 	.topnav a {
-		width: 100%;
+		width: 83%;
 		float: none;
 	}
 	.video {
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.left {
+		height: 100%;
+	}
+	.right {
+		height: 100%;
 	}
 }
 @font-face{
