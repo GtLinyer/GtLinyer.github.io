@@ -10,7 +10,10 @@
 		<meta name="Description" content="主页,链接,仓鼠,关于">
 		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="shortcut icon" href="image/logo.ico"> 
+		<link rel="stylesheet" type="text/css"  href="http://cdn.repository.webfont.com/webfonts/nomal/134613/19673/5def8874f629d8009453212a.css">
+		<link rel="stylesheet" type="text/css" href="http://cdn.repository.webfont.com/webfonts/nomal/134613/46121/5def8c1bf629d80094532132.css">
+		<link rel="stylesheet" type="text/css" href="http://cdn.repository.webfont.com/webfonts/nomal/134613/46587/5def8ce7f629d80094532134.css">
+		<link rel="shortcut icon" href="image/logo.ico">
 		
 		<script type="text/javascript" src="js/script.js"></script>
 		
@@ -19,6 +22,22 @@
 	</head>
 	
 	<body onLoad="date()">
+		<div id="loading">
+			<img src="image/loading.svg" height="100px"/>
+			<script type="text/javascript">
+				document.onreadystatechange = function() {
+					if (document.readyState == "complete") {
+						document.body.style.display = "block";
+						document.body.style.backgroundColor = "white";
+						document.getElementById("loading").style.display="none";
+					} else {
+						document.body.style.backgroundColor = "grey";
+						document.body.style.display = "none";
+					}
+				};
+			</script>
+		</div>
+		
 		<div class="container">
 		
 			<div class="header">

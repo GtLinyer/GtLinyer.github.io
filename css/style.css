@@ -9,7 +9,7 @@
 	width: 1200px;
 }
 #date {
-	font-family: "华文琥珀";
+	font-family: "JetLinkMediumOl1d94e4932e20dd5";
 	color: darkgreen;
 	float: right;
 }
@@ -27,10 +27,11 @@
 	display: block;
 	color: white;
 	text-align: center;
-	font-family: "华文彩云";
+	font-size: 22px;
+	font-family: "HanWangT00071d94e7b13720dd5";
 	border: 1px solid grey;
 	padding: 16px;
-	width: 48px;
+	width: 68px;
 	text-decoration: none;
 }
 .topnav a.active {
@@ -42,7 +43,7 @@
     color: white;
 }
 .body {
-	font-family: "幼圆";
+	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
 	margin-top: 2px;
 	background-color: #87CEFA;
 	border-radius: 0px;
@@ -115,7 +116,7 @@
 	height: 130px;
 	text-align: center;
 	font-size: 22px;
-	font-family: "幼圆";
+	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
 	color: red;
 }
 .right {
@@ -124,6 +125,7 @@
 	margin-top: 10px;
 	background-color: grey;
 	text-align: center;
+	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
 	color: white;
 	width: 250px;
 	height: 130px;
@@ -185,24 +187,4 @@
 	.right {
 		height: 100%;
 	}
-}
-@font-face{
-    font-family: '华文行楷';
-    src : url('https://cloud.linyer.cn:19999/fonts/hwxk.TTF');
-}
-@font-face{
-    font-family: '华文彩云';
-    src : url('https://cloud.linyer.cn:19999/fonts/fonts/hwcy.TTF');
-}
-@font-face{
-    font-family: '华文楷体';
-    src : url('https://cloud.linyer.cn:19999/fonts/fonts/hwkt.TTF');
-}
-@font-face{
-    font-family: '幼圆';
-    src : url('https://cloud.linyer.cn:19999/fonts/fonts/yy.TTF');
-}
-@font-face{
-    font-family: '华文琥珀';
-    src : url('https://cloud.linyer.cn:19999/fonts/fonts/hwhp.TTF');
 }
