@@ -154,9 +154,6 @@
 	}
 }
 @media screen and (max-width: 500px) {
-	#date {
-		width: 265px;
-	}
 	.click {
 		display: inline;
 	}
@@ -177,7 +174,7 @@
 		transition: transform 0.5s;
 	}
 	.topnav a {
-		width: 83%;
+		width: 81.8%;
 		float: none;
 	}
 	.video {
@@ -193,21 +190,21 @@
 }
 @font-face{
     font-family: '华文行楷';
-    src : url('../fonts/hwxk.TTF');
+    src : url('https://cloud.linyer.cn:19999/fonts/hwxk.TTF');
 }
 @font-face{
     font-family: '华文彩云';
-    src : url('../fonts/hwcy.TTF');
+    src : url('https://cloud.linyer.cn:19999/fonts/fonts/hwcy.TTF');
 }
 @font-face{
     font-family: '华文楷体';
-    src : url('../fonts/hwkt.TTF');
+    src : url('https://cloud.linyer.cn:19999/fonts/fonts/hwkt.TTF');
 }
 @font-face{
     font-family: '幼圆';
-    src : url('../fonts/yy.TTF');
+    src : url('https://cloud.linyer.cn:19999/fonts/fonts/yy.TTF');
 }
 @font-face{
     font-family: '华文琥珀';
-    src : url('../fonts/hwhp.TTF');
+    src : url('https://cloud.linyer.cn:19999/fonts/fonts/hwhp.TTF');
 }
