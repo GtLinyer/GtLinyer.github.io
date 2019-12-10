@@ -164,17 +164,15 @@
 	.topnav {
 		transform: translateX(-120%);
 		position: absolute;
-		width: 40%;
 		transition: transform 1s;
 	}
 	.shownav {
 		transform: translateX(0);
-		width: 40%;
 		display: block;
 		transition: transform 0.5s;
 	}
 	.topnav a {
-		width: 81.8%;
+		width: 80px;
 		float: none;
 	}
 	.video {
