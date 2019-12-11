@@ -9,6 +9,7 @@
 		<meta name="author" content="Linyer">
 		<meta name="Description" content="主页,链接,仓鼠,关于">
 		
+		<link rel="previous" href="image/loading.svg">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css"  href="https://cdn.repository.webfont.com/webfonts/nomal/134613/19673/5def8874f629d8009453212a.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.repository.webfont.com/webfonts/nomal/134613/46121/5def8c1bf629d80094532132.css">
@@ -23,22 +24,23 @@
 	
 	<body onLoad="date()">
 		<div id="loading">
-			<img src="image/loading.svg" height="100px"/>
+			<img src="image/loading.svg" height="200px"/>
+			<p>页面加载中...</p>
 			<script type="text/javascript">
 				document.onreadystatechange = function() {
 					if (document.readyState == "complete") {
-						document.body.style.display = "block";
+						document.getElementById("contain").style.display = "flex";
 						document.body.style.backgroundColor = "white";
 						document.getElementById("loading").style.display="none";
 					} else {
 						document.body.style.backgroundColor = "grey";
-						document.body.style.display = "none";
+						document.getElementById("contain").style.display = "none";
 					}
 				};
 			</script>
 		</div>
 		
-		<div class="container">
+		<div id="contain" class="container">
 		
 			<div class="header">
 				<a href="https://www.linyer.cn">

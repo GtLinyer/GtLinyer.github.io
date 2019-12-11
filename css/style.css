@@ -1,5 +1,10 @@
-.shoticon {
-	border-radius: 50%;
+#loading {
+	margin-top: 100px;
+	text-align: center;
+}
+#loading p {
+	color: white;
+	font-size: 30px;
 }
 .container {
 	margin: auto;
@@ -150,12 +155,12 @@
 		width: 100%;
 	}
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 530px) {
 	.nd-animation {
 		display: none;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
 	.click {
 		display: inline;
 	}
