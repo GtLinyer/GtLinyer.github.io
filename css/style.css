@@ -19,9 +19,13 @@
 	float: right;
 }
 .topnav {
+	opacity: 0.8;
 	z-index: 2; 
 	overflow: hidden;
 	background-color: #474747;
+}
+.topnav:hover {
+	opacity: 1.0;
 }
 .click {
 	z-index: 3; 
@@ -51,8 +55,13 @@
 	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
 	margin-top: 2px;
 	background-color: #87CEFA;
+	background-size: 0px;
 	border-radius: 0px;
 	font-size: 22px;
+	animation: start 2s;
+}
+@keyframes start {
+	50% {background-size: auto;}
 }
 .body p {
 	margin-top: 20px;
