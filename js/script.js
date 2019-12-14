@@ -4,11 +4,11 @@ function gifcha() {
 	if (c.classList.contains('showgif')) {
 		c.classList.add('closegif');
 		c.classList.remove('showgif');
-		c.setAttribute("src","image/c1.gif");
+		c.setAttribute("src","https://cloud.linyer.cn:19999/image/c1.gif");
 	} else if (c.classList.contains('closegif')){
 		c.classList.add('showgif');
 		c.classList.remove('closegif');
-		c.setAttribute("src","image/c0.gif");
+		c.setAttribute("src","https://cloud.linyer.cn:19999/image/c0.gif");
 	}
 	if (tn.classList.contains('shownav')) {
 		tn.classList.remove('shownav');
@@ -22,11 +22,11 @@ function gifcha1() {
 	if (c.classList.contains('showgif')) {
 		c.classList.add('closegif');
 		c.classList.remove('showgif');
-		c.setAttribute("src","../image/c1.gif");
+		c.setAttribute("src","https://cloud.linyer.cn:19999/image/c1.gif");
 	} else if (c.classList.contains('closegif')){
 		c.classList.add('showgif');
 		c.classList.remove('closegif');
-		c.setAttribute("src","../image/c0.gif");
+		c.setAttribute("src","https://cloud.linyer.cn:19999/image/c0.gif");
 	}
 	if (tn.classList.contains('shownav')) {
 		tn.classList.remove('shownav');
