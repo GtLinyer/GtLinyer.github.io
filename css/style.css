@@ -37,7 +37,7 @@
 	color: white;
 	text-align: center;
 	font-size: 22px;
-	font-family: "ljsh1d9a80529320dd5";
+	font-family: "黑体";
 	border: 1px solid grey;
 	padding: 16px;
 	width: 68px;
@@ -52,35 +52,44 @@
     color: white;
 }
 .body {
-	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
 	margin-top: 2px;
 	background-color: #87CEFA;
-	background-size: 0px;
-	border-radius: 0px;
-	font-size: 22px;
 	animation: start 2s;
 }
 @keyframes start {
 	50% {background-size: auto;}
 }
-.body p {
+.welcome {
+	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
+	background-size: 0px;
+	font-size: 22px;
+}
+.welcome p {
 	margin-top: 20px;
 	color: #E5E8E8;
 	font-size: 24px;
 	text-align: center;
 }
-.body p:hover {
+.welcome p:hover {
 	color: #117F08;
+}
+.bookChang {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.bookCR {
+	text-align: center;
+	font-size: 8px;
 }
 .lianjie {
 	margin: auto;
 	width: 335px;
 }
-.body ul {
+.lianjie ul {
 	list-style-type: none;
 	height: 32px;	
 }
-.body li {
+.lianjie li {
 	float: left;
 }
 .button {
@@ -107,10 +116,6 @@
 	height: 42px;
 	filter: blur(2px);
 	transform: rotate(360deg);
-}
-.video {
-	margin-left: 30%;
-	margin-right: 30%
 }
 .mb {
     width: 100%;

@@ -34,6 +34,13 @@ function gifcha1() {
 		tn.classList.add('shownav');
 	}
 }
+function cb(id){
+	var list = new Array();
+	list[0] = null;
+	list[1] = "<embed src=\"https://cloud.linyer.cn:19999/pdf/xtjpx.pdf\" height=\"1100px\" width=\"100%\"/>";
+	list[2] = "<embed src=\"https://cloud.linyer.cn:19999/pdf/jbjpx.pdf\" height=\"1100px\" width=\"100%\"/>";
+	document.getElementById("book").innerHTML = list[id];
+}
 function date() {
 	var d = new Date();
 	var wk = new Array('星期日','星期一', '星期二', '星期三', '星期四', '星期五', '星期六');
