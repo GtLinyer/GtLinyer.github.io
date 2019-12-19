@@ -2,8 +2,6 @@
 ## 主页
 - Hi, Welcome to my world
 ## 医学
-- 系统解剖学
-- 局部解剖学
 ## 链接
 - 我的CSDN博客
 - 我的Github
