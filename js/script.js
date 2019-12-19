@@ -16,6 +16,21 @@ function gifcha() {
 		tn.classList.add('shownav');
 	}
 }
+var i = 0;
+function ch() {
+	i ++;
+	if(i === 3) {
+		document.getElementById("wel").innerHTML = "<p>憋点啦！</p><p>再点也炸不鸟！</p>";
+	}else if(i === 4) {
+		document.getElementById("wel").innerHTML = "<p>哇！</p><p>你还点！</p>";
+	}else if(i === 5) {
+		document.getElementById("wel").innerHTML = "<p>行了行了！</p><p>服了你了！</p>";
+	}else if(i === 6) {
+		document.getElementById("wel").innerHTML = "<p>算了！</p><p>不理你了！你自己玩吧！</p>";
+	}else{
+		document.getElementById("wel").innerHTML = "<p>Hi</p><p>Welocome</p><p>TO</p><p>My</p><p>World</p>";
+	}
+}
 function gifcha1() {
 	var c = document.getElementById('c');
 	var tn = document.getElementById('tpn');
@@ -33,13 +48,6 @@ function gifcha1() {
 	} else {
 		tn.classList.add('shownav');
 	}
-}
-function cb(id){
-	var list = new Array();
-	list[0] = null;
-	list[1] = "<embed src=\"https://cloud.linyer.cn:19999/pdf/xtjpx.pdf\" height=\"1100px\" width=\"100%\"/>";
-	list[2] = "<embed src=\"https://cloud.linyer.cn:19999/pdf/jbjpx.pdf\" height=\"1100px\" width=\"100%\"/>";
-	document.getElementById("book").innerHTML = list[id];
 }
 function date() {
 	var d = new Date();
