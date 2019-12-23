@@ -6,12 +6,15 @@
 	color: white;
 	font-size: 30px;
 }
+body {
+	background-image: url("https://cloud.linyer.cn:19999/image/earth.jpg");
+}
 .container {
 	margin: auto;
     display: flex;
 	flex-direction: column;
 	background-color: #EBF5FB;
-	width: 1200px;
+	width: 800px;
 }
 #date {
 	font-family: "JetLinkMediumOl1d94e4932e20dd5";
@@ -128,25 +131,23 @@
 }
 .left {
 	float: left;
-	margin-left: 200px;
 	margin-top: 10px;
-	background-color: #94E8CD;
-	width: 460px;
+	background-color: crimson;
+	width: 100%;
 	height: 130px;
 	text-align: center;
 	font-size: 22px;
 	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
-	color: red;
+	color: white;
 }
 .right {
 	float: right;
-	margin-right: 200px;
 	margin-top: 10px;
 	background-color: grey;
 	text-align: center;
 	font-family: "jdzhonyuanjian1d94d64e2a20dd5";
 	color: white;
-	width: 250px;
+	width: 100%;
 	height: 130px;
 }
 .right a {
@@ -156,16 +157,8 @@
 .right a:hover {
 	color: #4EA6E4;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
 	.container {
-		width: 100%;
-	}
-	.left {
-		margin-left: 0;
-		width: 100%;
-	}
-	.right {
-		margin-right: 0;
 		width: 100%;
 	}
 }
@@ -199,11 +192,5 @@
 	.video {
 		margin-left: 0;
 		margin-right: 0;
-	}
-	.left {
-		height: 100%;
-	}
-	.right {
-		height: 100%;
 	}
 }
