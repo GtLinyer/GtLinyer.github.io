@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="utf-8">
-		
+	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
-		<meta name="Keywords" content="linyer,Linyer,GtLinyer,gtlinyer,主页,主页,链接,仓鼠,关于">
+		<meta charset="utf-8"> 
+		<meta name="Keywords" content="linyer,Linyer,GtLinyer,gtlinyer,主页">
 		<meta name="author" content="Linyer">
 		<meta name="Description" content="主页,链接,仓鼠,关于">
-		
 		<meta http-equiv="Access-Control-Allow-Origin" content="https://cloud.linyer.cn:19999">
 		
+		<link rel="previous" href="image/loading.svg">
 		<link rel="shortcut icon" href="https://cloud.linyer.cn:19999/logo/logo.ico">
-		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css">
 		
-		<script type="text/javascript" src="https://cloud.linyer.cn:19999/js/script.js"></script>
-		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
 		
-		<title>Linyer's web</title>
+		<title>Linyer主页</title>
 		
 	</head>
 	
@@ -51,7 +52,7 @@
 				<div class="click" onClick="gifcha()">
 					<img id="c" class="showgif" src="https://cloud.linyer.cn:19999/image/c0.gif" alt="c" height="40px">
 				</div>
-			  <ul id="tpn" class="topnav">
+				<ul id="tpn" class="topnav" onClick="gifcha()">
 					<li><a id="sy" class="active" onClick="cTpn('sy')">首页 <i class="fa fa-home"></i></a></li>
 					<li><a id="yx" onClick="cTpn('yx')">医学 <i class="fa fa-plus-square"></i></a></li>
 					<li><a id="lj" onClick="cTpn('lj')">链接 <i class="fa fa-link"></i></a></li>
@@ -91,4 +92,5 @@
 			
 		</div>
 	</body>
+	
 </html>
