@@ -1,7 +1,8 @@
 # 欢迎来到Linyer的站点
 ## 主页
 - Hi, Welcome to my world
-## 医学
+## 急救
+- 人人学会CPR，处处都有AED
 ## 链接
 - 我的CSDN博客
 - 我的Github
