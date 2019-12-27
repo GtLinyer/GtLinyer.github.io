@@ -11,7 +11,7 @@
 		<meta http-equiv="Access-Control-Allow-Origin" content="https://cloud.linyer.cn:19999">
 		
 		<link rel="shortcut icon" href="https://cloud.linyer.cn:19999/logo/logo.ico">
-		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css">
 		
 		<script type="text/javascript" src="https://cloud.linyer.cn:19999/js/script.js"></script>
@@ -29,7 +29,7 @@
 				document.onreadystatechange = function() {
 					if (document.readyState == "complete") {
 						document.getElementById("contain").style.display = "flex";
-						document.body.style.backgroundColor = "white";
+						document.body.style.backgroundColor = "black";
 						document.getElementById("loading").style.display="none";
 					} else {
 						document.getElementById("contain").style.display = "none";
@@ -52,10 +52,10 @@
 					<img id="c" class="showgif" src="https://cloud.linyer.cn:19999/image/c0.gif" alt="c" height="40px">
 				</div>
 				<ul id="tpn" class="topnav" onClick="gifcha()">
-					<li><a id="sy" class="active" onClick="cTpn('sy')" href="#">首页 <i class="fa fa-home"></i></a></li>
-					<li><a id="jj" onClick="cTpn('jj')" href="#">急救 <i class="fa fa-first-aid"></i></a></li>
-					<li><a id="lj" onClick="cTpn('lj')" href="#">链接 <i class="fa fa-link"></i></a></li>
-					<li><a id="gy" onClick="cTpn('gy')" href="#">关于 <i class="fa fa-comment-dots"></i></a></li>
+					<li><a id="sy" class="active" href="javascript:cTpn('sy');">首页 <i class="fa fa-home"></i></a></li>
+					<li><a id="jj" href="javascript:cTpn('jj');">急救 <i class="fa fa-first-aid"></i></a></li>
+					<li><a id="lj" href="javascript:cTpn('lj');">链接 <i class="fa fa-link"></i></a></li>
+					<li><a id="gy" href="javascript:cTpn('gy');">关于 <i class="fa fa-comment-dots"></i></a></li>
 				</ul>
 			</div>
 			
