@@ -13,9 +13,12 @@
 		<link rel="shortcut icon" href="https://cloud.linyer.cn:19999/logo/logo.ico">
 		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.css">
 		
 		<script type="text/javascript" src="https://cloud.linyer.cn:19999/js/script.js"></script>
-		<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+		<script type="text/javascript" src="https://cdn.staticfile.org/popper.js/1.16.0/popper.js"></script>
 		
 		<title>Linyer's website</title>
 		
@@ -47,17 +50,28 @@
 				<span id="date"></span>
 			</div>
 			
-			<div>
-				<div class="click" onClick="gifcha()">
-					<img id="c" class="showgif" src="https://cloud.linyer.cn:19999/image/c0.gif" alt="c" height="40px">
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+				<a class="navbar-brand" href="#">导航</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a id="sy" class="nav-link active" href="javascript:cTpn('sy');">首页 <i class="fa fa-home"></i></a>
+						</li>
+						<li class="nav-item">
+							<a id="jj" class="nav-link" href="javascript:cTpn('jj');">急救 <i class="fa fa-first-aid"></i></a>
+						</li>
+						<li class="nav-item">
+							<a id="lj" class="nav-link" href="javascript:cTpn('lj');">链接 <i class="fa fa-link"></i></a>
+						</li>
+						<li class="nav-item">
+							<a id="gy" class="nav-link" href="javascript:cTpn('gy');">关于 <i class="fa fa-comment-dots"></i></a>
+						</li>
+					</ul>
 				</div>
-				<ul id="tpn" class="topnav" onClick="gifcha()">
-					<li><a id="sy" class="active" href="javascript:cTpn('sy');">首页 <i class="fa fa-home"></i></a></li>
-					<li><a id="jj" href="javascript:cTpn('jj');">急救 <i class="fa fa-first-aid"></i></a></li>
-					<li><a id="lj" href="javascript:cTpn('lj');">链接 <i class="fa fa-link"></i></a></li>
-					<li><a id="gy" href="javascript:cTpn('gy');">关于 <i class="fa fa-comment-dots"></i></a></li>
-				</ul>
-			</div>
+			</nav>
 			
 			<div class="body">
 				<script>
