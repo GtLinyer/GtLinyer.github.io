@@ -11,7 +11,7 @@
 		<meta http-equiv="Access-Control-Allow-Origin" content="https://cloud.linyer.cn:19999">
 		
 		<link rel="shortcut icon" href="https://cloud.linyer.cn:19999/logo/logo.ico">
-		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css">
 		
 		<script type="text/javascript" src="https://cloud.linyer.cn:19999/js/script.js"></script>
@@ -60,28 +60,36 @@
 			</div>
 			
 			<div class="body">
-			  <script>
+				<script>
 				  	$(document).ready(function(){
 						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 					});
 					$(document).ready(function(){
 						$("#sy").click(function(){
+							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
+							$(".body").slideDown();
 						});
 					});
 					$(document).ready(function(){
 						$("#jj").click(function(){
+							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/jijiu.html");
+							$(".body").slideDown();
 						});
 					});
 					$(document).ready(function(){
 						$("#lj").click(function(){
+							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/lianjie.html");
+							$(".body").slideDown();
 						});
 					});
 					$(document).ready(function(){
 						$("#gy").click(function(){
+							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/about.html");
+							$(".body").slideDown();
 						});
 					});
 				</script>
