@@ -8,17 +8,19 @@
 		<meta name="Keywords" content="linyer,Linyer,GtLinyer,gtlinyer,主页,链接,仓鼠,关于">
 		<meta name="author" content="Linyer">
 		<meta name="Description" content="主页,链接,仓鼠,关于">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta http-equiv="Access-Control-Allow-Origin" content="https://cloud.linyer.cn:19999">
 		
 		<link rel="shortcut icon" href="https://cloud.linyer.cn:19999/logo/logo.ico">
-		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.css">
 		
 		<script type="text/javascript" src="https://cloud.linyer.cn:19999/js/script.js"></script>
 		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
-		<script type="text/javascript" src="https://cdn.staticfile.org/popper.js/1.16.0/popper.js"></script>
+		<script type="text/javascript" src="https://cdn.staticfile.org/popper.js/1.16.0/umd/popper.js"></script>
 		
 		<title>Linyer's website</title>
 		
@@ -48,10 +50,11 @@
 					<img src="https://cloud.linyer.cn:19999/logo/logo1.jpg" alt="LOGO" height="44px">
 				</a>
 				<span id="date"></span>
+				<a id="dl" class="btn btn-outline-light" href="javascript:cTpn('jj');">登录</a>
 			</div>
 			
 			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-				<a class="navbar-brand" href="#">导航</a>
+				<p class="navbar-brand">导航</p>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -103,6 +106,13 @@
 						$("#gy").click(function(){
 							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/about.html");
+							$(".body").fadeIn();
+						});
+					});
+					$(document).ready(function(){
+						$("#dl").click(function(){
+							$(".body").hide();
+							$(".body").load("https://cloud.linyer.cn:19999/pages/denglu.html");
 							$(".body").fadeIn();
 						});
 					});
