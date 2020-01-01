@@ -51,6 +51,7 @@
 				</a>
 				<span id="date"></span>
 				<a id="dl" class="btn btn-outline-light" href="javascript:cTpn('jj');">登录</a>
+				<span id="weltalk" style="color: white;"></span>
 			</div>
 			
 			<nav class="navbar bg-dark navbar-dark navbar-expand-md">
@@ -78,38 +79,36 @@
         	
 			<div class="body">
 				<script>
-				  	$(document).ready(function(){
-						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
-					});
 					$(document).ready(function(){
+						var name = $.cookie("name");
+						if(name != null){
+							$("dl").css("display","none");
+							$("weltalk").html("欢迎您：" + name);
+						}else{
+							$("dl").css("display","block");
+							$("weltalk").html(null);
+						}
+						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 						$("#sy").click(function(){
 							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 							$(".body").fadeIn();
 						});
-					});
-					$(document).ready(function(){
 						$("#jj").click(function(){
 							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/jijiu.html");
 							$(".body").fadeIn();
 						});
-					});
-					$(document).ready(function(){
 						$("#lj").click(function(){
 							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/lianjie.html");
 							$(".body").fadeIn();
 						});
-					});
-					$(document).ready(function(){
 						$("#gy").click(function(){
 							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/about.html");
 							$(".body").fadeIn();
 						});
-					});
-					$(document).ready(function(){
 						$("#dl").click(function(){
 							$(".body").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/denglu.html");
