@@ -82,6 +82,7 @@
 					$(document).ready(function(){
 						var name = $.cookie("name");
 						if(name != null || name.length > 0){
+							console.log(name);
 							$("dl").css("display","none");
 							$("weltalk").html("欢迎您：" + name);
 						}else{
