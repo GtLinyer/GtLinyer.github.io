@@ -51,6 +51,7 @@
 				</a>
 				<span id="date"></span>
 				<a id="dl" class="btn btn-outline-light" href="javascript:cTpn('jj');">登录</a>
+				<a id="zx" class="btn btn-outline-light" href="javascript:;">注销</a>
 				<span id="weltalk" style="color: white;"></span>
 			</div>
 			
@@ -80,19 +81,21 @@
 			<div class="body">
 				<script>
 					$(document).ready(function(){
-						var name = $.cookie('name');
-						for(var i=0;i<name.length;i++){
-							var userName = name[i];
-						}
-						if(userName != null || userName.length > 0){
-							console.log(userName);
-							$("dl").css("display","none");
-							$("weltalk").show();
-							$("weltalk").html("欢迎您：" + userName);
+						var name = $.cookie('name1');
+						console.log(name);
+						if(name != undefined){
+							$("#dl").css("display","none");
+							$("#weltalk").show();
+							$("#weltalk").html("欢迎您：" + name);
 						}else{
-							$("dl").css("display","block");
-							$("weltalk").hide();
+							$("#dl").css("display","");
+							$("#weltalk").hide();
+							$("#zx").hide();
 						}
+						$("#zx").click(function(){
+							$.removeCookie('name1', { path: '/' });
+							window.location.reload();
+						});
 						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 						$("#sy").click(function(){
 							$(".body").hide();
