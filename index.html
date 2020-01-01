@@ -80,14 +80,18 @@
 			<div class="body">
 				<script>
 					$(document).ready(function(){
-						var name = $.cookie("name");
-						if(name != null || name.length > 0){
-							console.log(name);
+						var name = $.cookie('name');
+						for(var i=0;i<name.length;i++){
+							var userName = name[i];
+						}
+						if(userName != null || userName.length > 0){
+							console.log(userName);
 							$("dl").css("display","none");
-							$("weltalk").html("欢迎您：" + name);
+							$("weltalk").show();
+							$("weltalk").html("欢迎您：" + userName);
 						}else{
 							$("dl").css("display","block");
-							$("weltalk").html(null);
+							$("weltalk").hide();
 						}
 						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 						$("#sy").click(function(){
