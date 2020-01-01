@@ -86,19 +86,24 @@
 							$("#dl").css("display","none");
 							$("#weltalk").show();
 							$("#weltalk").html("欢迎您：" + name);
+							$(".body").load("https://cloud.linyer.cn:19999/pages/zt.html");
 						}else{
 							$("#dl").css("display","");
 							$("#weltalk").hide();
 							$("#zx").hide();
+							$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 						}
 						$("#zx").click(function(){
 							$.removeCookie('name', { path: '/' });
 							window.location.reload();
 						});
-						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 						$("#sy").click(function(){
 							$(".body").hide();
-							$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
+							if(name != undefined) {
+								$(".body").load("https://cloud.linyer.cn:19999/pages/zt.html");
+							}else{
+								$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
+							}
 							$(".body").fadeIn();
 						});
 						$("#jj").click(function(){
