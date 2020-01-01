@@ -81,7 +81,7 @@
 			<div class="body">
 				<script>
 					$(document).ready(function(){
-						var name = $.cookie('name1');
+						var name = $.cookie('name');
 						console.log(name);
 						if(name != undefined){
 							$("#dl").css("display","none");
@@ -93,7 +93,7 @@
 							$("#zx").hide();
 						}
 						$("#zx").click(function(){
-							$.removeCookie('name1', { path: '/' });
+							$.removeCookie('name', { path: '/' });
 							window.location.reload();
 						});
 						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
