@@ -81,7 +81,7 @@
 				<script>
 					$(document).ready(function(){
 						var name = $.cookie("name");
-						if(name != null){
+						if(name != null || name.length > 0){
 							$("dl").css("display","none");
 							$("weltalk").html("欢迎您：" + name);
 						}else{
