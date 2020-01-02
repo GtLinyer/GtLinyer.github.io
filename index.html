@@ -23,10 +23,9 @@
 		<script type="text/javascript" src="https://cdn.staticfile.org/popper.js/1.16.0/umd/popper.js"></script>
 		
 		<title>Linyer's website</title>
-		
 	</head>
 	
-	<body onLoad="date()">
+	<body>
 		<div id="loading">
 			<img src="https://cloud.linyer.cn:19999/image/loading.svg" height="200px"/>
 			<p>页面加载中...</p>
@@ -45,14 +44,28 @@
 		
 		<div id="contain" class="contain">
 
-			<div class="header">
-				<a href="https://www.linyer.cn">
-					<img src="https://cloud.linyer.cn:19999/logo/logo1.jpg" alt="LOGO" height="44px">
-				</a>
-				<span id="date"></span>
-				<a id="dl" class="btn btn-outline-light" href="javascript:cTpn('jj');">登录</a>
-				<a id="zx" class="btn btn-outline-light" href="javascript:;">注销</a>
-				<span id="weltalk" style="color: white;"></span>
+			<div class="head">
+				<div class="logo">
+					<a href="https://www.linyer.cn">
+						<img class="logoImg" src="https://cloud.linyer.cn:19999/logo/logo1.jpg" alt="LOGO">
+					</a>
+				</div>
+				<div class="loginMsg">
+					<a id="dl" class="btn btn-outline-light" href="javascript:;">登录</a>
+					<a id="zx" class="btn btn-outline-light" href="javascript:;">注销</a>
+					<span id="weltalk" style="color: white;"></span>
+				</div>
+				<div class="headMsg">
+					<div class="tq">
+						<iframe id="tq" scrolling="no" src="https://tianqiapi.com/api.php?style=ta&skin=cake" frameborder="0" allowtransparency="true"></iframe>
+					</div>
+					<div class="date">
+						当前日期：<span id="year" class="shuZi"></span>年<span id="month" class="shuZi"></span>月<span id="day" class="shuZi"></span>日&nbsp<span id="week" class="shuZi"></span>
+					</div>
+					<div class="date">
+						当前时间：<span id="hour" class="shuZi"></span>：<span id="minute" class="shuZi"></span>：<span id="second" class="shuZi"></span>
+					</div>
+				</div>
 			</div>
 			
 			<nav class="navbar bg-dark navbar-dark navbar-expand-md">
