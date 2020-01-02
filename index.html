@@ -95,56 +95,56 @@
 				</div>
 			</nav>
         	
-			<div class="body">
-				<script>
-					$(document).ready(function(){
-						var name = $.cookie('name');
-						if(name != undefined){
-							$("#dl").css("display","none");
-							$("#weltalk").show();
-							$("#weltalk").html("欢迎您：" + name);
+			<script>
+				$(document).ready(function(){
+					var name = $.cookie('name');
+					if(name != undefined){
+						$("#dl").css("display","none");
+						$("#weltalk").show();
+						$("#weltalk").html("欢迎您：" + name);
+						$(".body").load("https://cloud.linyer.cn:19999/pages/zt.html");
+					}else{
+						$("#dl").css("display","");
+						$("#weltalk").hide();
+						$("#zx").hide();
+						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
+					}
+					$("#zx").click(function(){
+						$.removeCookie('name', { path: '/' });
+						window.location.reload();
+					});
+					$("#sy").click(function(){
+						$(".body").hide();
+						if(name != undefined) {
 							$(".body").load("https://cloud.linyer.cn:19999/pages/zt.html");
 						}else{
-							$("#dl").css("display","");
-							$("#weltalk").hide();
-							$("#zx").hide();
 							$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
 						}
-						$("#zx").click(function(){
-							$.removeCookie('name', { path: '/' });
-							window.location.reload();
-						});
-						$("#sy").click(function(){
-							$(".body").hide();
-							if(name != undefined) {
-								$(".body").load("https://cloud.linyer.cn:19999/pages/zt.html");
-							}else{
-								$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
-							}
-							$(".body").fadeIn();
-						});
-						$("#jj").click(function(){
-							$(".body").hide();
-							$(".body").load("https://cloud.linyer.cn:19999/pages/jijiu.html");
-							$(".body").fadeIn();
-						});
-						$("#lj").click(function(){
-							$(".body").hide();
-							$(".body").load("https://cloud.linyer.cn:19999/pages/lianjie.html");
-							$(".body").fadeIn();
-						});
-						$("#gy").click(function(){
-							$(".body").hide();
-							$(".body").load("https://cloud.linyer.cn:19999/pages/about.html");
-							$(".body").fadeIn();
-						});
-						$("#dl").click(function(){
-							$(".body").hide();
-							$(".body").load("https://cloud.linyer.cn:19999/pages/denglu.html");
-							$(".body").fadeIn();
-						});
+						$(".body").fadeIn();
 					});
-				</script>
+					$("#jj").click(function(){
+						$(".body").hide();
+						$(".body").load("https://cloud.linyer.cn:19999/pages/jijiu.html");
+						$(".body").fadeIn();
+					});
+					$("#lj").click(function(){
+						$(".body").hide();
+						$(".body").load("https://cloud.linyer.cn:19999/pages/lianjie.html");
+						$(".body").fadeIn();
+					});
+					$("#gy").click(function(){
+						$(".body").hide();
+						$(".body").load("https://cloud.linyer.cn:19999/pages/about.html");
+						$(".body").fadeIn();
+					});
+					$("#dl").click(function(){
+						$(".body").hide();
+						$(".body").load("https://cloud.linyer.cn:19999/pages/denglu.html");
+						$(".body").fadeIn();
+					});
+				});
+			</script>
+			<div class="body">
 			</div>
 			
 			<iframe class="footer" src="https://cloud.linyer.cn:19999/pages/copyright.html" height="60px" width="100%" frameborder="0"></iframe>
