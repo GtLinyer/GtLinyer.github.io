@@ -15,12 +15,16 @@
 		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/style.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/foundation/6.6.1/css/foundation.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/foundation/6.6.1/css/foundation-prototype.css">
 		
 		<script type="text/javascript" src="https://cloud.linyer.cn:19999/js/script.js"></script>
 		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.js"></script>
 		<script type="text/javascript" src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 		<script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
 		<script type="text/javascript" src="https://cdn.staticfile.org/popper.js/1.16.0/umd/popper.js"></script>
+		<script type="text/javascript" src="https://cdn.staticfile.org/foundation/6.6.1/js/foundation.js"></script>
+		<script type="text/javascript" src="https://cdn.staticfile.org/foundation/6.6.1/js/plugins/foundation.core.js"></script>
 		
 		<title>Linyer's website</title>
 	</head>
@@ -72,29 +76,31 @@
 				</div>
 			</div>
 			
-			<nav class="navbar bg-dark navbar-dark navbar-expand-md">
-				<p class="navbar-brand">导航</p>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a id="sy" class="nav-link active" href="javascript:cTpn('sy');">首页 <i class="fa fa-home"></i></a>
-						</li>
-						<li class="nav-item">
-							<a id="jj" class="nav-link" href="javascript:cTpn('jj');">急救 <i class="fa fa-first-aid"></i></a>
-						</li>
-						<li class="nav-item">
-							<a id="lj" class="nav-link" href="javascript:cTpn('lj');">链接 <i class="fa fa-link"></i></a>
-						</li>
-						<li class="nav-item">
-							<a id="gy" class="nav-link" href="javascript:cTpn('gy');">关于 <i class="fa fa-comment-dots"></i></a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-        	
+			<div>
+				<nav class="navbar bg-dark navbar-dark navbar-expand-md">
+					<p class="navbar-brand">导航</p>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a id="sy" class="nav-link active" href="javascript:cTpn('sy');">首页 <i class="fa fa-home"></i></a>
+							</li>
+							<li class="nav-item">
+								<a id="jj" class="nav-link" href="javascript:cTpn('jj');">急救 <i class="fa fa-first-aid"></i></a>
+							</li>
+							<li class="nav-item">
+								<a id="lj" class="nav-link" href="javascript:cTpn('lj');">链接 <i class="fa fa-link"></i></a>
+							</li>
+							<li class="nav-item">
+								<a id="gy" class="nav-link" href="javascript:cTpn('gy');">关于 <i class="fa fa-comment-dots"></i></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			
 			<script>
 				$(document).ready(function(){
 					var name = $.cookie('name');
