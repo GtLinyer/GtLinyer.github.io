@@ -61,7 +61,6 @@
 				</div>
 				<div class="headMsg">
 					<div class="tq">
-						<iframe id="tq" scrolling="no" src="https://tianqiapi.com/api.php?style=ta&skin=cake" frameborder="0" allowtransparency="true"></iframe>
 					</div>
 					<div class="date">
 						当前日期：<span id="year" class="shuZi"></span>年<span id="month" class="shuZi"></span>月<span id="day" class="shuZi"></span>日&nbsp;<span id="week"></span>
@@ -73,9 +72,11 @@
 			</div>
 
 			<div id="daohang">
-				<nav class="navbar bg-dark navbar-dark navbar-expand-md">
-					<p class="navbar-brand">导航</p>
+				<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
+					<p class="navbar-brand">天气</p>
+					<iframe id="tq" scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=cake&color=FFFFFF" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<p class="navbar-brand">导航</p>
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="collapsibleNavbar">
