@@ -9,30 +9,77 @@
 		<meta name="keywords" content="linyer,Linyer,GtLinyer,gtlinyer,404">
 		<meta name="author" content="Linyer">
 		
-		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/404.css">
-		<link rel="shortcut icon" href="https://cloud.linyer.cn:19999/logo/logo.ico" /> 
+		<link rel="shortcut icon" href="https://www.linyer.cn/images/logo.ico" /> 
 		
 		<title>404</title>
 		
+		<style>
+			body {
+				background-color: #1C2833;
+				color: white;
+			}
+			h1 {
+				font-size: 48px;
+				text-align: center;
+				color: #E74C3C;
+			}
+			#msg {
+				font-size: 24px;
+				text-align: center;
+			}
+			.button {
+				text-decoration: none;
+				color: white;
+				border: 2px solid #8AC007;
+				border-radius: 10px;
+				padding: 10px;
+			}
+			.button:hover {
+				background-color: #8AC007;
+			}
+			#foot {
+				text-align: center;
+				font-size: 12px;
+				color: white;
+			}
+			#foot a {
+				text-decoration: none;
+				color: white;
+			}
+			#foot a:hover {
+				color: #2980B9;
+				text-decoration: underline;
+			}
+		</style>
 	</head>
 	
 	<body>
-		<div class="container">
-			<h1 align="center">404 NOT FIND！</h1>
-			<div class="body" align="center">
-				<br>
-				灰常遗憾。。。
-				<br><br>
-				您要找的页面已失效！
-				<br><br>
-				<a class="button" href="https://www.linyer.cn">回到主页</a>
-				<br><br>
-			</div>
-			
-			<hr>
-			<iframe src="https://cloud.linyer.cn:19999/pages/copyright.html" height="60px" frameborder="0"/>
-		
+		<h1>404 NOT FIND！</h1>
+		<div id="msg">
+			<br>
+			Ohhhh......
+			<br><br>
+			灰常遗憾。。。
+			<br><br>
+			您要找的页面八存在！
+			<br><br>
+			<a class="button" href="https://web.linyer.cn">回到主页</a>
+			<br><br>
 		</div>
+		<hr>
+		<div id="foot">
+			Copyright &copy; 2019 - <span id="Myyear"></span> <strong><a href="https://www.linyer.cn/" target="_blank">Linyer.</a></strong>All Rights Reserved.<br>
+			<strong><a href="http://www.linyer.cn/" target="_blank">Linyer.</a></strong> 版权所有. | 
+			<a  href="http://www.beian.miit.gov.cn/" target="_blank">苏ICP备20003926号-1</a>
+		</div>
+		<script type="text/javascript">
+			function Myyear() {
+				var d = new Date();
+				var yy = d.getFullYear();
+				return yy;
+			}
+			document.getElementById("Myyear").innerHTML = Myyear();
+		</script>
 	</body>
 	
 </html>
