@@ -1,0 +1,78 @@
+* {
+	margin: 0 auto;
+}
+html,body {
+	height: 100%;
+	/*公祭，灰阶滤镜
+	FILTER: gray;
+	-webkit-filter: grayscale(100%);
+	*/
+}
+body {
+	background-color: #2C3E50;
+}
+h1 {
+	color: white;
+}
+a {
+	color: #AED6F1;
+	text-decoration: none;
+}
+a:hover {
+	color: #2980B9;
+	text-decoration: underline;
+}
+main {
+	width: 100%;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+.table {
+	width: 800px;
+	margin: auto;
+}
+blockquote {
+	color: black;
+	text-align: left;
+}
+.images {
+	width: 60%;
+}
+.kyImgCot {
+	width: 100%;
+	overflow: scroll;
+}
+footer {
+	width: 100%;
+	height: 45px;
+	bottom:0;
+}
+.copyright {
+	color: white;
+	text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #969696;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+	.table {
+		width: 100%;
+		margin: auto;
+	}
+	.images {
+		width: 100%;
+	}
+}
