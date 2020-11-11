@@ -1,182 +1,177 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		
-		<meta charset="utf-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
-		<meta name="Keywords" content="linyer,Linyer,GtLinyer,gtlinyer,主页,链接,仓鼠,关于">
-		<meta name="author" content="Linyer">
-		<meta name="Description" content="主页,链接,仓鼠,关于">
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		
-		<link rel="shortcut icon" href="https://cloud.linyer.cn:19999/logo/logo.ico">
-		<link rel="stylesheet" type="text/css" href="https://cloud.linyer.cn:19999/css/style.css">
-		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/font-awesome/5.12.0-1/css/all.css">
-		<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.css">
-		
-		<script type="text/javascript" src="https://cloud.linyer.cn:19999/js/script.js"></script>
-		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.js"></script>
-		<script type="text/javascript" src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-		<script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
-		<script type="text/javascript" src="https://cdn.staticfile.org/popper.js/1.16.0/umd/popper.js"></script>
-		
-		<title>Linyer's website</title>
-	</head>
-	
-	<body>
-		<div id="loading">
-			<img src="https://cloud.linyer.cn:19999/image/loading.svg" height="200px"/>
-			<p>页面加载中...</p>
-			<script type="text/javascript">
-				document.onreadystatechange = function() {
-					if (document.readyState == "complete") {
-						document.getElementById("contain").style.display = "flex";
-						document.body.style.backgroundColor = "black";
-						document.getElementById("loading").style.display="none";
-					} else {
-						document.getElementById("contain").style.display = "none";
-					}
-				};
-			</script>
-		</div>
-		
-		<div id="contain" class="contain">
-			
-			<div>
-				<div class="left">
-					<div>
-						<a href="https://www.linyer.cn">
-							<img class="logoImg" src="https://cloud.linyer.cn:19999/logo/logo1.jpg" alt="LOGO">
-						</a>
-					</div>
-					<div class="dlMsg">
-						<div>
-							<a id="dl" class="btn btn-outline-light" href="javascript:cTpn();">登录</a>
-							<a id="zx" class="btn btn-outline-light" href="javascript:;">注销</a>
-						</div>
-						<div id="weltalk" style="color: white;"></div>
-					</div>
-				</div>
-				<div class="headMsg">
-					<div class="tq">
-					</div>
-					<div class="date">
-						当前日期：<span id="year" class="shuZi"></span>年<span id="month" class="shuZi"></span>月<span id="day" class="shuZi"></span>日&nbsp;<span id="week"></span>
-					</div>
-					<div class="date">
-						当前时间：<span id="hour" class="shuZi"></span>：<span id="minute" class="shuZi"></span>：<span id="second" class="shuZi"></span>
-					</div>
-				</div>
-			</div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-language" content="zh-cn" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+  <meta name="author" content="Linyer" />
+  <meta name="keywords" content="linyer,Linyer,GtLinyer,gtlinyer,工具,疫情,当日疫情,疫情一览,考研,思维导图" />
+  <meta name="description" content="欢迎来到Linyer工具,主要页面有:今日疫情一览,考研思维导图" />
+  <meta name="theme-color" content="#2C3E50" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="layui/css/layui.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="layui/layui.js"></script>
+  <script type="text/javascript" src="js/myJs.js"></script>
+  <link rel="shortcut icon" href="//www.linyer.cn/favicon.ico" />
+  <title>Linyer工具</title>
+</head>
 
-			<div id="daohang">
-				<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
-					<div id="tqk">
-						<iframe id="tq" scrolling="no" src="https://tianqiapi.com/api.php?style=tz&skin=cake&color=FFFFFF" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe>
-					</div>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="collapsibleNavbar">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a id="sy" class="nav-link active" href="javascript:cTpn('sy');">首页 <i class="fa fa-home"></i></a>
-							</li>
-							<li class="nav-item">
-								<a id="jj" class="nav-link" href="javascript:cTpn('jj');">急救 <i class="fa fa-first-aid"></i></a>
-							</li>
-							<li class="nav-item">
-								<a id="lj" class="nav-link" href="javascript:cTpn('lj');">链接 <i class="fa fa-link"></i></a>
-							</li>
-							<li class="nav-item">
-								<a id="gy" class="nav-link" href="javascript:cTpn('gy');">关于 <i class="fa fa-comment-dots"></i></a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-			
-			<script>
-				$(document).ready(function(){
-					var name = $.cookie('name');
-					if(name != undefined){
-						$("#dl").css("display","none");
-						$("#weltalk").show();
-						$("#weltalk").html("欢迎您：" + name);
-						$(".body").load("https://cloud.linyer.cn:19999/pages/zt.html");
-						$(".body").ready(function(){
-							$(".body").fadeIn();
-						});
-					}else{
-						$("#dl").css("display","");
-						$("#weltalk").hide();
-						$("#zx").hide();
-						$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
-						$(".body").ready(function(){
-							$(".body").fadeIn();
-						});
-					}
-					$("#zx").click(function(){
-						$.removeCookie('name', { path: '/' });
-						window.location.reload();
-					});
-					$("#sy").click(function(){
-						$(".body").hide();
-						if(name != undefined) {
-							$(".body").load("https://cloud.linyer.cn:19999/pages/zt.html");
-						}else{
-							$(".body").load("https://cloud.linyer.cn:19999/pages/main.html");
-						}
-						$(".body").ready(function(){
-							$(".body").fadeIn();
-						});
-					});
-					$("#jj").click(function(){
-						$(".body").hide();
-						$(".body").load("https://cloud.linyer.cn:19999/pages/jijiu.html");
-						$(".body").ready(function(){
-							$(".body").fadeIn();
-						});
-					});
-					$("#lj").click(function(){
-						$(".body").hide();
-						$(".body").load("https://cloud.linyer.cn:19999/pages/lianjie.html");
-						$(".body").ready(function(){
-							$(".body").fadeIn();
-						});
-					});
-					$("#gy").click(function(){
-						$(".body").hide();
-						$(".body").load("https://cloud.linyer.cn:19999/pages/about.html");
-						$(".body").ready(function(){
-							$(".body").fadeIn();
-						});
-					});
-					$("#dl").click(function(){
-						$(".body").hide();
-						$(".body").load("https://cloud.linyer.cn:19999/pages/denglu.html");
-						$(".body").ready(function(){
-							$(".body").fadeIn();
-						});
-					});
-					$("#shang").height();
-				});
-			</script>
-			<div id="xia">
-				<div class="body">
-				</div>
+<body>
+  <div id="contain">
+    <nav>
+      <ul class="layui-nav">
+        <li class="layui-nav-item">
+          <p class="layui-logo">LinyerTools</p>
+        </li>
+        <li class="layui-nav-item layui-this"> <a href="#">查看疫情</a> </li>
+        <li class="layui-nav-item"> <a href="kaoyan.html">考研导图</a> </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>今日疫情一览</h1>
+      <div class="table">
+        <table class="layui-table">
+          <thead>
+            <tr>
+              <th style="text-align: center;color: red;">现存确诊</th>
+              <th style="text-align: center;color: black">累计确诊</th>
+              <th style="text-align: center;color: #9C4B1A">疑似</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span id="currentConfirmedCount"></span> 例</td>
+              <td><span id="confirmedCount"></span> 例</td>
+              <td><span id="suspectedCount"></span> 例</td>
+            </tr>
+            <tr>
+              <th style="text-align: center">-</th>
+              <th style="text-align: center;color: black;">新增确诊</th>
+              <th style="text-align: center;color: #9C4B1A">新增疑似</th>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td><span id="confirmedIncr"></span> 例</td>
+              <td><span id="suspectedIncr"></span> 例</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="layui-table">
+          <thead>
+            <tr>
+              <th style="text-align: center;color: green;">治愈</th>
+              <th style="text-align: center;color: red;">死亡</th>
+              <th style="text-align: center;color: orange;">重症</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span id="curedCount"></span> 例</td>
+              <td><span id="deadCount"></span> 例</td>
+              <td><span id="seriousCount"></span> 例</td>
+            </tr>
+            <tr>
+              <th style="text-align: center;color: green;">新增治愈</th>
+              <th style="text-align: center;color: red;">新增死亡</th>
+              <th style="text-align: center;color: orange;">新增重症</th>
+            </tr>
+            <tr>
+              <td><span id="curedIncr"></span> 例</td>
+              <td><span id="deadIncr"></span> 例</td>
+              <td><span id="seriousIncr"></span> 例</td>
+            </tr>
+          </tbody>
+        </table>
+        <blockquote id="note1" class="layui-elem-quote"></blockquote>
+        <blockquote id="note2" class="layui-elem-quote"></blockquote>
+        <blockquote id="note3" class="layui-elem-quote"></blockquote>
+        <blockquote id="remark1" class="layui-elem-quote"></blockquote>
+        <blockquote id="remark2" class="layui-elem-quote"></blockquote>
+        <blockquote id="remark3" class="layui-elem-quote"></blockquote>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <p class="copyright"> Copyright &copy; 2019 - <span id="year"></span> <strong><a
+            href="https://tools.linyer.cn/">LinyerTools.</a></strong> All Rights
+        Reserved.<br>
+        <strong><a href="http://www.linyer.cn/" target="_blank">Linyer.</a></strong> 版权所有.
+        <script type="text/javascript">
+          var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+          document.write(unescape("%3Cspan id='cnzz_stat_icon_1278615601'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278615601%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+		&ensp; | &ensp;
+		<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备20003926号-1</a><br/>
+		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011502011112">
+			<img src="images/batb.png" alt="备案图标"/>
+			苏公网安备 32011502011112号
+		</a>
+      </p>
+    </footer>
+  </div>
+  <script>
+    //layui引入
+    layui.use(['element'], function () {
+      var element = layui.element;
+    });
 
-				<div id="foot-small">
-					<iframe src="https://cloud.linyer.cn:19999/pages/copyright.html" height="60px" width="100%" frameborder="0" scrolling="no" seamless></iframe>
-				</div>
-			</div>
-			<div id="foot-big">
-				<iframe src="https://cloud.linyer.cn:19999/pages/copyright.html" height="60px" width="100%" frameborder="0" scrolling="no" seamless></iframe>
-			</div>
-			
-		</div>
-	</body>
-	
+    //JQuery脚本
+    $(document).ready(function () {
+      //获取年
+      $("#year").html(getYear());
+
+      //疫情接口
+      $(window).ready(function () {
+        $.get("https://api.tianapi.com/txapi/ncov/index?key=90dc7a4b5ca68e07a983343573ca59fe",
+          function (data, status) {
+            if (status === "success") {
+              if (data.code === 200 && data.msg === "success") {
+                console.log(data);
+				$("#currentConfirmedCount").append(JSON.stringify(data.newslist[0].desc.currentConfirmedCount));
+                $("#confirmedCount").append(JSON.stringify(data.newslist[0].desc.confirmedCount));
+                $("#suspectedCount").append(JSON.stringify(data.newslist[0].desc.suspectedCount));
+                $("#curedCount").append(JSON.stringify(data.newslist[0].desc.curedCount));
+                $("#deadCount").append(JSON.stringify(data.newslist[0].desc.deadCount));
+                $("#seriousCount").append(JSON.stringify(data.newslist[0].desc.seriousCount));
+
+                $("#confirmedIncr").append(JSON.stringify(data.newslist[0].desc.confirmedIncr));
+                $("#suspectedIncr").append(JSON.stringify(data.newslist[0].desc.suspectedIncr));
+                $("#curedIncr").append(JSON.stringify(data.newslist[0].desc.curedIncr));
+                $("#deadIncr").append(JSON.stringify(data.newslist[0].desc.deadIncr));
+                $("#seriousIncr").append(JSON.stringify(data.newslist[0].desc.seriousIncr));
+
+                var note1 = JSON.stringify(data.newslist[0].desc.note1);
+                var note2 = JSON.stringify(data.newslist[0].desc.note2);
+                var note3 = JSON.stringify(data.newslist[0].desc.note3);
+                note1 = note1.replace(/\"/g, "");
+                note2 = note2.replace(/\"/g, "");
+                note3 = note3.replace(/\"/g, "");
+                $("#note1").append(note1);
+                $("#note2").append(note2);
+                $("#note3").append(note3);
+
+                var remark1 = JSON.stringify(data.newslist[0].desc.remark1);
+                var remark2 = JSON.stringify(data.newslist[0].desc.remark2);
+                var remark3 = JSON.stringify(data.newslist[0].desc.remark3);
+                remark1 = remark1.replace(/\"/g, "");
+                remark2 = remark2.replace(/\"/g, "");
+                remark3 = remark3.replace(/\"/g, "");
+                $("#remark1").append(remark1);
+                $("#remark2").append(remark2);
+                $("#remark3").append(remark3);
+              } else {
+                alert("❌获取失败！");
+              }
+            } else {
+              alert("❌服务器错误！");
+            }
+          });
+      });
+    });
+  </script>
+</body>
+
 </html>
