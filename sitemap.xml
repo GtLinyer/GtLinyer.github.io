@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./sitemap.xsl"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 	<url>
-		<loc>https://www.linyer.cn</loc>
-		<lastmod>2019-12-24</lastmod>
+		<loc>https://web.linyer.cn</loc>
+		<lastmod>2020-11-11</lastmod>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://cloud.linyer.cn:19999</loc>
-		<lastmod>2019-12-24</lastmod>
+		<loc>https://web.linyer.cn/kaoyan.html</loc>
+		<lastmod>2020-11-11</lastmod>
 		<priority>0.9</priority>
-	</url>
-	<url>
-		<loc>https://cloud.linyer.cn:19999/bbs</loc>
-		<lastmod>2019-12-24</lastmod>
-		<priority>0.8</priority>
 	</url>
 </urlset>
